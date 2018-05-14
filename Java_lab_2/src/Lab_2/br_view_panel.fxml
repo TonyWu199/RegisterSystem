@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.15829145728643215" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lab_2.br_main_controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label layoutX="460.0" layoutY="16.0" prefHeight="28.0" prefWidth="124.0" text="门 诊 挂 号" textFill="#5c0a41">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="br_login_bh" layoutX="104.0" layoutY="30.0" />
+            <Label layoutX="40.0" layoutY="6.0" text="患者编号:" />
+            <Label fx:id="br_view_bh" layoutX="104.0" layoutY="6.0" prefHeight="20.0" prefWidth="77.0" />
+            <Label layoutX="181.0" layoutY="6.0" text="患者姓名:" />
+            <Label fx:id="br_view_mz" layoutX="254.0" layoutY="6.0" prefHeight="20.0" prefWidth="77.0" />
+            <Label layoutX="40.0" layoutY="30.0" text="账户余额:" />
+            <Label fx:id="br_view_ye" layoutX="104.0" layoutY="30.0" prefHeight="20.0" prefWidth="77.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="331.0" prefWidth="590.0">
+         <children>
+            <Label layoutX="55.0" layoutY="81.0" text="号种类别">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="321.0" layoutY="81.0" text="号种名称">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="322.0" layoutY="128.0" text="应缴金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="128.0" text="交款金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textfield_jkje" layoutX="126.0" layoutY="124.0" prefHeight="30.0" prefWidth="173.0" />
+            <Label layoutX="55.0" layoutY="169.0" text="找零金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="321.0" layoutY="169.0" text="挂号号码">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="36.0" text="科室名称">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="322.0" layoutY="36.0" text="医生姓名">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="br_view_enter" layoutX="176.0" layoutY="249.0" mnemonicParsing="false" onAction="#br_view_enter_f" text="确定">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="br_view_clear" layoutX="287.0" layoutY="249.0" mnemonicParsing="false" onAction="#br_view_clear_f" text="清除">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="br_view_exit" onAction="#br_view_exit_f" layoutX="392.0" layoutY="249.0" mnemonicParsing="false" text="退出">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="combobox_hzlb" editable="true" layoutX="126.0" layoutY="77.0" prefHeight="30.0" prefWidth="173.0" />
+            <ComboBox fx:id="combobox_ksmc" editable="true" layoutX="126.0" layoutY="30.0" prefHeight="30.0" prefWidth="173.0" />
+            <ComboBox fx:id="combobox_ysxm" editable="true" layoutX="392.0" layoutY="30.0" prefHeight="30.0" prefWidth="173.0" />
+            <ComboBox fx:id="combobox_hzmc" editable="true" layoutX="392.0" layoutY="75.0" prefHeight="30.0" prefWidth="173.0" />
+            <Label fx:id="label_yjje" layoutX="392.0" layoutY="123.0" prefHeight="30.0" prefWidth="173.0" />
+            <Label fx:id="label_ghhm" layoutX="392.0" layoutY="163.0" prefHeight="30.0" prefWidth="173.0" />
+            <Label fx:id="label_zlje" layoutX="126.0" layoutY="163.0" prefHeight="30.0" prefWidth="173.0" />
+            <Label fx:id="label_show_info" layoutX="213.0" layoutY="216.0" prefHeight="20.0" prefWidth="173.0" textAlignment="CENTER" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
